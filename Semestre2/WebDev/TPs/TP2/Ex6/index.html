@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex6</title>
+    <style>
+      form {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Formulaire exercice 3</legend>
+        <input
+          type="text"
+          pattern="[a-z].*"
+          title="start with a lower case character"
+          name="titre"
+          placeholder="Saisir votre titre"
+          autofocus
+          required
+        />
+        <br />
+        <input
+          type="password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{4,8}$"
+          title="Must contain at least one digit and one lower case character and upper case caracter symbol"
+          title="password length between 4 and 8 characters and contains at least one digit and at least one symbol"
+          minlength="4"
+          maxlength="8"
+          placeholder="Saisir votre mot de passe"
+          required
+        />
+        <input type="hidden" name="MAX_FILE_SIZE" value="3000" />
+        <br />
+        <input type="file" name="uploaded_file" value="" max="" multiple />
+        <input type="submit" name="" value="envoyer" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+th,
+:root {
+  --bg: #282828;
+  --dark-bg: #1d2021;
+  --panel: #1d2021;
+  --text: #ebdbb2;
+  --accent: #fe8019;
+  --muted: #928374;
+  --border: #3c3836;
+  --shadow: #1d2021;
+  --shadow: rbg(2, 3, 3);
+}
+
+th,
+label,
+legend {
+  color: var(--accent);
+}
+td {
+  color: var(--text);
+}
+
+fieldset {
+  background-color: var(--dark-bg);
+  border-radius: 4px;
+}
+body {
+  background-color: var(--bg);
+}
+
+input {
+  background-color: var(--muted);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+td,
+th,
+table {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+fieldset,
+table,
+legend,
+div {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: auto;
+}

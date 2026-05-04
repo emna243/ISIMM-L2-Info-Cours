@@ -1,0 +1,4 @@
+let iterations = 5;
+for (i = 1; i <= iterations; i++) {
+  console.log(i * i);
+}

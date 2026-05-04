@@ -1,0 +1,41 @@
+form {
+  background-color: #fff7ff;
+  padding: 50px;
+  /* width: 350px; */
+  font-family: "trebuchet ms", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+legend {
+  color: #a0522d;
+  font-weight: bold;
+}
+
+label {
+  margin: 20px;
+  font-size: 90%;
+}
+
+input {
+  background-color: #5fbff0;
+  font-family: "trebuchet ms", sans-serif;
+  border: 1px solid black;
+}
+
+select,
+option {
+  background-color: #5fbff0;
+  font-family: "trebuchet ms", sans-serif;
+}
+
+textarea {
+  border: 1px solid black;
+  background-color: #5fbff0;
+  font-family: "trebuchet ms", sans-serif;
+}

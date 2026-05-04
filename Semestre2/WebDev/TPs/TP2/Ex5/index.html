@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex4</title>
+    <style>
+      fieldset,
+      form,
+      div{
+        max-width: fit-content;
+        margin-inline: auto;
+      }
+      form{
+          width: fit-content;
+          border: 1px solid black;
+          padding: 10px;
+      }
+      </table>
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Formulaire Exercice 2</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="Civilite">civilite</label>
+            </td>
+            <td>
+              <label for="Monsieur">Monsieur</label>
+              <input type="radio" name="Civilite" value="Monsieur" checked />
+              <label for="Madame">Madame</label>
+              <input type="radio" name="Civilite" value="Madame" />
+              <label for="Mademoiselle">Mademoiselle</label>
+              <input type="radio" name="Civilite" value="Mademoiselle" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="nom">Nom/Prenom</label>
+            </td>
+            <td>
+              <input type="text" name="nom" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Address</label>
+            </td>
+            <td>
+              <textarea name="adress" rows="2" cols="30"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="nopostal">No Postal/Localite</label>
+            </td>
+            <td>
+              <input type="number" name="nopostal" value="" />
+              <input type="text" name="localite" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pays">Pays</label>
+            </td>
+            <td>
+              <select>
+                <option value="Tunisie">Tunisie</option>
+                <option value="zarzis">Zarzis :)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Platforme">Platforme</label>
+            </td>
+            <td>
+              <label for="Windows">Windows</label>
+              <input type="checkbox" name="Windows" value="Windows" />
+              <label for="Macintosh">Macintosh</label>
+              <input type="checkbox" name="Macintosh" value="Macintosh" />
+              <label for="Linux">Linux</label>
+              <input type="checkbox" name="Linux" value="Linux" checked />
+              <label for="Unix">Unix</label>
+              <input type="checkbox" name="Unix" value="Unix" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="app">Application(s)</label>
+            </td>
+            <td>
+              <select name="app" multiple size="4">
+                <option value="Bureautique">Bureautique</option>
+                <option value="DAO">DAO</option>
+                <option value="SGBD">SGBD</option>
+                <option value="Internet">Internet</option>
+                <option value="Load Balancer">Nginx</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="reset" name="Effacer" value="Effacer" />
+              <input
+                type="submit"
+                name="Soumettre"
+                value="Soumettre formulaire"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex7</title>
+    <style>
+      form {
+        margin: auto;
+        max-width: fit-content;
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend><b>Vos coordonnees</b></legend>
+
+        <table>
+          <tr>
+            <td><label>Nom :</label></td>
+            <td><input type="text" placeholder="votre nom" required /></td>
+          </tr>
+
+          <tr>
+            <td><label>Prenom :</label></td>
+            <td><input type="text" placeholder="votre prenom" required /></td>
+          </tr>
+
+          <tr>
+            <td><label>Date de naissance :</label></td>
+            <td><input type="date" required /></td>
+          </tr>
+
+          <tr>
+            <td><label>Mail :</label></td>
+            <td><input type="email" placeholder="votre mail" required /></td>
+          </tr>
+
+          <tr>
+            <td><label>Votre site :</label></td>
+            <td><input type="url" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Code :</label></td>
+            <td><input type="text" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Genre :</label></td>
+            <td>
+              <input type="radio" name="genre" /> Homme
+              <br />
+              <input type="radio" name="genre" /> Femme
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Pays :</label></td>
+            <td>
+              <select required>
+                <option value="" disabled selected>Votre pays</option>
+
+                <optgroup label="Enemy">
+                  <option>Israel</option>
+                  <option>USA</option>
+                </optgroup>
+
+                <optgroup label="Traitors">
+                  <option>hmm</option>
+                </optgroup>
+
+                <optgroup label="Warriors">
+                  <option>Palestine</option>
+                  <option>Iran</option>
+                </optgroup>
+                <option>Tunisia</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+      <fieldset>
+        <legend><b>Vos gouts</b></legend>
+
+        <input type="checkbox" /> Tarte aux fraises a la creme d'amandes
+        <br />
+        <input type="checkbox" /> Tarte aux prunes
+        <br />
+        <input type="checkbox" /> Tarte rustique aux mirabelles de Lorraine,
+        noisettes et miel <br /><br />
+
+        <textarea
+          rows="5"
+          cols="60"
+          placeholder="Decrivez vos gouts en detail"
+        ></textarea>
+      </fieldset>
+
+      <br />
+      <fieldset>
+        <legend><b>Envoyez nous votre photo</b></legend>
+
+        <input type="file" />
+        <br />
+        <br />
+        <input type="reset" value="Effacer" />
+        <input type="submit" value="Envoyer" />
+      </fieldset>
+    </form>
+  </body>
+</html>

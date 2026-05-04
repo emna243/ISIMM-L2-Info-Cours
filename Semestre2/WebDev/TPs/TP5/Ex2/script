@@ -1,0 +1,7 @@
+const input1 = prompt("input1:");
+const input2 = prompt("input2:");
+const number1 = Number(input1);
+const number2 = Number(input2);
+const total = number1 + number2;
+
+alert(total);

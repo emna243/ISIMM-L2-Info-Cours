@@ -1,0 +1,14 @@
+function show() {
+  let x = Number(document.getElementById("x").value);
+  let result = document.getElementById("result");
+  let t = "";
+  for (let i = 1; i <= x; i++) {
+    for (let j = 1; j <= i; j++) {
+      t += "*";
+    }
+    t += "<br/>";
+  }
+  result.innerHTML = t;
+}
+
+show();

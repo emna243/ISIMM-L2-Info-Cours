@@ -1,0 +1,29 @@
+function func() {
+  let nums = [1, 2, 3, 4, 5];
+  let result = "my array: " + nums.join(" | ");
+
+  let sum = 0;
+  for (let i = 0; i < nums.length; i++) sum += nums[i];
+  let average = sum / nums.length;
+  console.log(result);
+  alert(result);
+
+  result = `Sum: ${sum}, Average: ${average}`;
+  console.log(result);
+  alert(result);
+
+  nums.push(6);
+  result = "new array: " + nums.join(" | ");
+  console.log(result);
+  alert(result);
+
+  sum = 0;
+  for (let i = 0; i < nums.length; i++) sum += nums[i];
+  average = sum / nums.length;
+
+  result = `Sum: ${sum}, Average: ${average}`;
+  console.log(result);
+  alert(result);
+}
+
+func();

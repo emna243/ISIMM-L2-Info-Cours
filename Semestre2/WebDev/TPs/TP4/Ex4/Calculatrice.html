@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ex4</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Calculatrice</h1>
+    <input type="number" id="a" />
+    <span id="oper">+</span>
+    <input type="number" id="b" /> = <input type="text" id="res" readonly />
+    <br />
+    <br />
+    Choisir l'operateur:
+    <select id="operChoice" onchange="changeOper()">
+      <option value="+">addition (+)</option>
+      <option value="-">substraction (-)</option>
+      <option value="*">mulitlication (*)</option>
+      <option value="/">division (/)</option>
+    </select>
+    <button onclick="calculer()">calculer</button>
+  </body>
+  <script src="script.js"></script>
+</html>

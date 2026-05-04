@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <fieldset>
+          <legend>Vos donnees personnelles</legend>
+          Nom <input type="text" name="nom" /><br /><br />
+          Prenom <input type="text" name="prenom" /><br /><br />
+          Date de naissance <input type="text" name="dob" /><br /><br />
+
+          <fieldset>
+            <legend>Lieu de naissance</legend>
+            <input type="radio" name="lieu" value="tunisie" class="c1" />
+            Tunisie
+            <input type="radio" name="lieu" value="autres" class="c1" /> autres
+          </fieldset>
+        </fieldset>
+        <br />
+        Adresse postale <input type="text" name="adresse" /><br /><br />
+        Code postal <input type="text" name="cp" /><br /><br />
+        Adresse electronique <input type="text" name="email" /><br /><br />
+        Page personnelle <input type="text" name="page" /><br /><br />
+        Telephone portable <input type="text" name="tel" /><br /><br />
+
+        Semestre
+        <select name="semestre">
+          <option value="s1">s1</option>
+          <option value="s2">s2</option></select
+        ><br /><br />
+
+        Niveau en HTML
+        <input type="range" name="niveau" min="0" max="10" /><br /><br />
+
+        <fieldset>
+          <legend>Connaissances:</legend>
+          <input type="radio" name="connaissances" value="html" class="c1" />
+          HTML
+          <input type="radio" name="connaissances" value="css" class="c1" />
+          CSS
+          <input type="radio" name="connaissances" value="js" class="c1" />
+          Javascript
+        </fieldset>
+
+        <br />
+
+        <input type="submit" value="Envoyer" />
+      </fieldset>
+    </form>
+  </body>
+</html>

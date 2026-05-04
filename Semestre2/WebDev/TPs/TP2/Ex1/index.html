@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex1</title>
+    <style>
+      tr,
+      td,
+      th,
+      table {
+        border: 2px solid black;
+        text-align: center;
+      }
+      table {
+        max-width: fit-content;
+        margin-inline: auto;
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="6px" cellpadding="4px">
+      <thead>
+        <tr>
+          <th colspan="3">exercice 01 Serie 01 les tableaux en HTML</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: silver">
+          <th>Titre1</th>
+          <th>Titre2</th>
+          <th>Titre3</th>
+        </tr>
+        <tr>
+          <td>Cellule Simple</td>
+          <td>Cellule Simple</td>
+          <td>Cellule Simple</td>
+        </tr>
+        <tr>
+          <td colspan="2">Deux colonnes assemblees</td>
+          <td>Cellule Simple</td>
+        </tr>
+        <tr>
+          <td>Cellule Simple</td>
+          <td>Cellule Simple</td>
+          <td rowspan="2">
+            Deux lignes assemblees avec alignement verticle en haut
+          </td>
+        </tr>
+        <tr>
+          <td>Cellule Simple</td>
+          <td>Cellule Simple</td>
+        </tr>
+        <tr>
+          <td>Cellule Simple</td>
+          <td colspan="2" rowspan="2" style="text-align: left">
+            Deux lignes assemblees, deux colonnes assemblees
+          </td>
+        </tr>
+        <tr>
+          <td>Cellule Simple</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">exercice 01 Serie 01 les tableaux en HTML</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

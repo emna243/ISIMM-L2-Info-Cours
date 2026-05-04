@@ -1,0 +1,10 @@
+const num1 = Number(prompt("Number 1:"));
+const num2 = Number(prompt("Number 2:"));
+
+if (num1 > num2) {
+  alert("Number 1 is greater than Number 2");
+} else if (num2 > num1) {
+  alert("Number 2 is greater than Number 1");
+} else {
+  alert("Number 1 equal Number 2");
+}

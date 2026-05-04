@@ -1,0 +1,36 @@
+function factorial(num) {
+  if (num < 0) return "Not defined";
+  let result = 1;
+  for (let i = 1; i <= num; i++) result *= i;
+  return result;
+}
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+function fibonacci(n) {
+  if (n <= 1) return n;
+  let a = 0,
+    b = 1,
+    temp;
+  for (let i = 2; i <= n; i++) {
+    temp = a + b;
+    a = b;
+    b = temp;
+  }
+  return b;
+}
+
+a = Number(prompt("n = "));
+console.log("factorial(" + a + ") = " + factorial(a));
+console.log("isPrime(" + a + ") = " + isPrime(a));
+console.log("fibonacci(" + a + ") = " + fibonacci(a));
+
+alert("factorial(" + a + ") = " + factorial(a));
+alert("isPrime(" + a + ") = " + isPrime(a));
+alert("fibonacci(" + a + ") = " + fibonacci(a));

@@ -1,0 +1,19 @@
+function func() {
+  let person = {
+    firstName: "Mohamed Ali",
+    lastName: "Knis",
+    age: 20,
+    city: "Zarzis",
+  };
+
+  let result = `Name: ${person.firstName} ${person.lastName}`;
+  console.log(result);
+  alert(result);
+
+  person.country = "Tunisia";
+  result = "new object: " + JSON.stringify(person);
+  console.log(result);
+  alert(result);
+}
+
+func();
